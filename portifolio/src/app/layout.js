@@ -13,6 +13,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link
+          rel="icon"
+          href="/icon.png"
+          type="image/png"
+          sizes="16x16 32x32 64x64"
+         />
+        <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.7.5/src/app/ci.min.css"
         />
