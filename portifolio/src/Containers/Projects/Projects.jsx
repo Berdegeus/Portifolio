@@ -51,19 +51,15 @@ const Projects = () => {
   ];
 
   useEffect(() => {
-    // Verifica o tamanho da tela e ajusta o displayCount conforme necessário
-    const updateDisplayCount = () => {
-      if (window.innerWidth > 640) { // 640px é o breakpoint 'sm' do Tailwind por padrão
-        setDisplayCount(projectsCards.length);
-      } else {
-        setDisplayCount(3);
-      }
+    // Função para verificar se o dispositivo é móvel
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 640);
     };
 
-    window.addEventListener('resize', updateDisplayCount);
-    updateDisplayCount(); // Chama ao carregar e quando a tela é redimensionada
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
 
-    return () => window.removeEventListener('resize', updateDisplayCount);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const handleShowMore = () => {
@@ -73,8 +69,8 @@ const Projects = () => {
   return (
     <div id="Projects" className="mt-10">
       <h2 className="text-3xl font-bold text-accent-200 mb-6 ml-10">Projetos desenvolvidos na faculdade</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 m-10">
-        {projectsCards.slice(0, displayCount).map((project, index) => (
+      <div className={`grid ${isMobile ? 'grid-cols-1' : 'sm:grid-cols-3 lg:grid-cols-4'} gap-4 m-10`}>
+        {projectsCards.slice(0, isMobile ? displayCount : projectsCards.length).map((project, index) => (
           <ProjectCard
             key={index}
             imgSrc={project.imgSrc}
@@ -85,8 +81,8 @@ const Projects = () => {
           />
         ))}
       </div>
-      {displayCount === 3 && window.innerWidth <= 640 && (
-        <div className="text-center sm:hidden">
+      {isMobile && displayCount < projectsCards.length && (
+        <div className="text-center">
           <button onClick={handleShowMore} className="mt-4 bg-accent-200 hover:bg-accent-300 text-white font-bold py-2 px-4 rounded">
             Ver Mais
           </button>
