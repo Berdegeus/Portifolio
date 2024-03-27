@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center min-h-[96vh] bg-bg-100">
+    <div id="Home" className="flex items-center justify-center min-h-[96vh] bg-bg-100">
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl p-8">
         <div className="flex flex-col space-y-4 max-w-md">
           <h1 className="font-bold text-primary-300 text-7xl">

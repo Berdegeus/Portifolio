@@ -2,7 +2,7 @@ import ExperienceCard from "../../Components/ExperienceCard/ExperienceCard";
 
 const Experience = () => {
   return (
-    <div className="bg-bg-100 p-8">
+    <div id="Experience" className="bg-bg-100 p-8">
       <h2 className="text-3xl font-bold text-accent-200 mb-6">Experiência Profissional</h2>
       <ExperienceCard
         imageSrc="/Trucking.jpeg"

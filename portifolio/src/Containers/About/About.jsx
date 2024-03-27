@@ -1,7 +1,7 @@
 import CurrentSemester from "../../Components/CurrentSemester/CurrentSemester";
 const About = () => {
   return (
-    <div className="bg-bg-200 text-text-100 p-8">
+    <div id="About" className="bg-bg-200 text-text-100 p-8">
       <div className="max-w-4xl mx-auto mt-5">
         <h2 className="text-3xl font-bold mb-16">Sobre Mim</h2>
         <p className="text-lg">

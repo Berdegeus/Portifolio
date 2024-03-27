@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaInstagram } from 'react-
 
 const Contact = () => {
   return (
-    <div className="bg-bg-200 py-10">
+    <div id="Contact" className="bg-bg-200 py-10">
       <div className="text-center">
         <h2 className="text-4xl text-accent-100 font-bold mb-6">Entre em Contato</h2>
         <p className="mb-8 text-lg max-w-2xl mx-auto">

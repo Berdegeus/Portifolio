@@ -48,7 +48,7 @@ const Projects = () => {
   ];
 
   return (
-  <div className="mt-10">
+  <div id="Projects" className="mt-10">
   <h2 className="text-3xl font-bold text-accent-200 mb-6 ml-10">Projetos desenvolvidos na faculdade</h2>
       <div className="grid grid-cols-4 gap-4 m-10">
         {projectsCards.map((project, index) => (
