@@ -14,16 +14,16 @@ const Contact = () => {
           <a href="mailto:Berdegeus@gmail.com" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
             <FaEnvelope />
           </a>
-          <a href="https://github.com/Berdegeus" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/Berdegeus" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/bernardo-roorda/" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
+          <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bernardo-roorda/" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/Berdegeus" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/Berdegeus" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
             <FaTwitter />
           </a>
-          <a href="https://www.instagram.com/berdegeus_/" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
+          <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/berdegeus_/" className="text-text-100 hover:text-accent-200 transition-colors text-4xl">
             <FaInstagram />
         </a>
         </div>
