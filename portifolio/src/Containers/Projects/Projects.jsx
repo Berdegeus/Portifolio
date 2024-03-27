@@ -1,9 +1,8 @@
-"use client";
-import { useState, useEffect } from 'react';
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 
+// TODO: add show more button for mobile
+
 const Projects = () => {
-  const [displayCount, setDisplayCount] = useState(3); // Mostrar 3 cartões inicialmente
   const projectsCards = [
     {
       imgSrc: "/Projects/Batalha.png",
@@ -50,27 +49,11 @@ const Projects = () => {
     },
   ];
 
-  useEffect(() => {
-    // Função para verificar se o dispositivo é móvel
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 640);
-    };
-
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  const handleShowMore = () => {
-    setDisplayCount(projectsCards.length); // Mostra todos os cartões
-  };
-
   return (
     <div id="Projects" className="mt-10">
       <h2 className="text-3xl font-bold text-accent-200 mb-6 ml-10">Projetos desenvolvidos na faculdade</h2>
-      <div className={`grid ${isMobile ? 'grid-cols-1' : 'sm:grid-cols-3 lg:grid-cols-4'} gap-4 m-10`}>
-        {projectsCards.slice(0, isMobile ? displayCount : projectsCards.length).map((project, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 m-10">
+        {projectsCards.map((project, index) => (
           <ProjectCard
             key={index}
             imgSrc={project.imgSrc}
@@ -81,13 +64,6 @@ const Projects = () => {
           />
         ))}
       </div>
-      {isMobile && displayCount < projectsCards.length && (
-        <div className="text-center">
-          <button onClick={handleShowMore} className="mt-4 bg-accent-200 hover:bg-accent-300 text-white font-bold py-2 px-4 rounded">
-            Ver Mais
-          </button>
-        </div>
-      )}
     </div>
   );
 };
