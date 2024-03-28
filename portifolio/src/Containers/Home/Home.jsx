@@ -12,10 +12,10 @@ const Home = () => {
             Olá, eu sou Bernardo
           </h1>
           <div>
-            <Link href="https://www.linkedin.com/in/bernardo-roorda/" className="inline-block bg-primary-200 text-white py-2 px-4 rounded hover:bg-primary-300 transition duration-300">
+            <Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/bernardo-roorda/" className="inline-block bg-primary-200 text-white py-2 px-4 rounded hover:bg-primary-300 transition duration-300">
               <CiLinkedin className="inline-block" />
             </Link>
-            <Link href="https://github.com/Berdegeus" className="inline-block ml-2 bg-accent-100 text-white py-2 px-4 rounded hover:bg-accent-200 transition duration-300">
+            <Link rel="noopener noreferrer" target="_blank" href="https://github.com/Berdegeus" className="inline-block ml-2 bg-accent-100 text-white py-2 px-4 rounded hover:bg-accent-200 transition duration-300">
               <FaGithub className="inline-block" />
             </Link>
           </div>
