@@ -5,6 +5,32 @@ const Experience = () => {
     <div id="Experience" className="bg-bg-100 p-8">
       <h2 className="text-3xl font-bold text-accent-200 mb-6">Experiência Profissional</h2>
       <ExperienceCard
+        imageSrc="/Positivo.jpeg"
+        role="Estagiário"
+        company="POSITIVO TECNOLOGIA"
+        period="Jul de 2024 - atual"
+        location="Curitiba, Paraná, Brasil - Híbrido"
+        project="Desenvolvimento de aplicativos mobile"
+        attributes={[
+          "Atuação no projeto de Casa inteligente.",
+          "Desenvolvimento de aplicativos mobile para Android e iOS em Flutter.",
+          "Implementação de novas funcionalidades e testes automatizados, resolução de bugs e documentação.",
+        ]}
+      />
+      <ExperienceCard
+        imageSrc="/Aeromax.jpeg"
+        role="Estagiário"
+        company="AEROMAX AVIAÇÃO"
+        period="Abr de 2023 - Jul de 2024"
+        location="Curitiba, Paraná, Brasil - Híbrido"
+        project="Desenvolvimento de sistemas com foco em manutenção aeronáutica."
+        attributes={[
+          "Implementação de sistemas integrados para gerenciamento de orçamentos e ordens de serviço.",
+          "Transcrição e padronização de laudos técnicos, garantindo conformidade com a ANAC.",
+          "Modernização do site corporativo para NextJS e Tailwind CSS.",
+        ]}
+      />
+      <ExperienceCard
         imageSrc="/Trucking.jpeg"
         role="Estagiário"
         company="Trucking"
@@ -16,19 +42,6 @@ const Experience = () => {
           "Análise e relatório de dados para otimização do desempenho do projeto.",
           "Atualização e gerenciamento do portal de acesso.",
           "Comunicação estratégica e alinhamento com parceiros corporativos.",
-        ]}
-      />
-      <ExperienceCard
-        imageSrc="/Aeromax.jpeg"
-        role="Estagiário"
-        company="AEROMAX AVIAÇÃO"
-        period="Abr de 2023 - Presente"
-        location="Curitiba, Paraná, Brasil - Híbrido"
-        project="Desenvolvimento de sistemas com foco em manutenção aeronáutica."
-        attributes={[
-          "Implementação de sistemas integrados para gerenciamento de orçamentos e ordens de serviço.",
-          "Transcrição e padronização de laudos técnicos, garantindo conformidade com a ANAC.",
-          "Modernização do site corporativo para NextJS e Tailwind CSS.",
         ]}
       />
     </div>
