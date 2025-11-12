@@ -4,11 +4,25 @@ const Experience = () => {
   return (
     <div id="Experience" className="bg-bg-100 p-8">
       <h2 className="text-3xl font-bold text-accent-200 mb-6">Experiência Profissional</h2>
+        <ExperienceCard
+        imageSrc="/Positivo.jpeg"
+        role="Desenvolvedor Junior"
+        company="POSITIVO TECNOLOGIA"
+        period="Jul de 2025 - atual"
+        location="Curitiba, Paraná, Brasil - Híbrido"
+        project="Desenvolvimento de aplicativos mobile em dispositivos POS."
+        attributes={[
+          "Desenvolvimento, manutenção e modernização do app diagnóstico para terminais POS.",
+          "Atuação em evolução de produto, correções e suporte a variantes de dispositivos.",
+          "Manutenção do app legado e consolidação de práticas de versionamento e release.",
+          "Foco em confiabilidade, rastreabilidade e experiência de uso em campo, fábrica e laboratório.",
+        ]}
+      />
       <ExperienceCard
         imageSrc="/Positivo.jpeg"
         role="Estagiário"
         company="POSITIVO TECNOLOGIA"
-        period="Jul de 2024 - atual"
+        period="Jul de 2024 - Jul de 2025"
         location="Curitiba, Paraná, Brasil - Híbrido"
         project="Desenvolvimento de aplicativos mobile"
         attributes={[
