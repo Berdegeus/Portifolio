@@ -11,7 +11,7 @@ const About = () => {
            Minha curiosidade natural e o gosto por desafios me levaram a explorar além dos jogos. Aos 14 anos, embarquei em um projeto mais ambicioso: desenvolver um programa para a gestão de notas fiscais. Esse projeto foi um marco em minha vida, marcando a transição de um hobby para uma paixão com impacto real. <br /> <br />
         </p>
         <p className="text-lg">
-            Atualmente, estou no <CurrentSemester /> de Ciência da Computação na PUC, onde cada disciplina e projeto amplia minha visão e reforça minha decisão de seguir nesta carreira. Embora meus interesses na tecnologia sejam amplos, ultimamente tenho me dedicado especialmente ao frontend, onde posso unir lógica e estética para criar experiências digitais envolventes. <br /> <br />
+            Atualmente, estou no <CurrentSemester /> de Sistemas de informação na PUCPR. Embora meus interesses na tecnologia sejam amplos, ultimamente tenho me dedicado especialmente ao desenvolvimento mobile nativo e usando fraworks. <br /> <br />
         </p>
         <p className="text-lg">
              Para mim, a tecnologia é mais do que uma área de estudo ou trabalho; é uma extensão da minha criatividade e um caminho para fazer a diferença. Estou animado para continuar esta jornada, aprendendo, criando e contribuindo para o mundo da tecnologia, que sempre soube ser meu lugar.
